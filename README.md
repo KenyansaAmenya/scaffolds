@@ -1,5 +1,5 @@
 # scaffolds
-    /*Bottom Sheet Scaffold*/  
+    Bottom Sheet Scaffold
 A bottom sheet scaffold is a UI pattern that slides up from the bottom of the screen to display additional content or options. It is typically used to show contextual information such as a list of options or a list of recently accessed items. Bottom sheet scaffolds are often used to provide a distraction-free environment for users to access additional information when it is needed.
    /*Backdrop Scaffold*/
 The Backdrop scaffold is a UI pattern that provides a full-screen overlay when triggered. It is typically used to display additional content such as a menu, search bar, or other options related to the main content on the screen. The backdrop scaffold is useful for providing an extra layer of context and options to the user. You can also use the BackdropScaffold API to animate the background, font size and other elements of the layout.
