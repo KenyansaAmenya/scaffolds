@@ -1,0 +1,23 @@
+@Composable
+fun MyScreen() {
+    BackdropScaffold(
+        scaffoldState = rememberScaffoldState(),
+        topBar = {
+            TopAppBar(
+                title = { Text("My Screen") }
+            )
+        },
+        bodyContent = {
+            // Your content here
+            // ...
+        },
+        backLayer = {
+            // Your content here
+            // ...
+        },
+        frontLayer = {
+            // Your content here
+            // ...
+        }
+    )
+}
