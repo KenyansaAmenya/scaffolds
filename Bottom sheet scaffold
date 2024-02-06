@@ -1,0 +1,17 @@
+@Composable
+fun BottomSheetScaffold() {
+    BottomSheetScaffold(
+        bottomSheet = {
+            BottomSheet(
+                onCloseRequest = {
+                    // Add logic to handle the bottom sheet closing
+                }
+            ) {
+                // Add content to be displayed in the bottom sheet
+            }
+        },
+        bodyContent = {
+            // Add content to be displayed in the body
+        }
+    )
+}
