@@ -1,0 +1,33 @@
+@Composable
+fun MyApp() {
+    val navigation = NavigationDrawerController()
+    MaterialTheme {
+        Scaffold(
+            topBar = {
+                TopAppBar(
+                    title = { Text(text = "My App") },
+                    navigationIcon = {
+                        NavigationDrawerIcon(
+                            drawerState = navigation.drawerState,
+                            onStateChange = navigation.updateDrawerState
+                        )
+                    }
+                )
+            },
+            drawerContent = {
+                var context = ContextAmbient.current
+                MyDrawerContent(
+                    closeDrawer = {
+                        navigation.updateDrawerState(DrawerState.Closed)
+                    },
+                    navigateToScreen = { screen ->
+                        // Handle navigation 
+                    }
+                )
+            }
+        ) {
+            // The main content of your screen
+            Text(text = "This is the main content")
+        }
+    }
+}
